@@ -138,39 +138,42 @@
 </body>
 </html>
      
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Pseudo-class examples */
+        a:hover {
+            color: green;
+            font-weight: bold;
+        }
+
+        /* Pseudo-element examples */
+        p::before {
+            content: 'Hello ';
+            color: red;
+            font-weight: bold;
+        }
+
+        p::after {
+            content: ' Bye!';
+            color: red;
+            font-weight: bold;
+        }
+
+        p::selection {
+            background-color: purple;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <p>paint me!</p>
+    <p>Paint me!</p>
+    <a href="#">Hover over me</a>
 </body>
 </html>
-     p:hover {
-    color: green;
-    font-weight: bold;
-}
-
-p::before {
-    content: 'Hello ';
-    color: red;
-    font-weight: bold;
-}
-
-p::after {
-    content: ' Bye!';
-    color: red;
-    font-weight: bold;
-}
-
-p::selection {
-    background-color: purple;
-    color: white;
-}
 
 
 
